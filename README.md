@@ -24,6 +24,7 @@ I have included RGB to grayscale conversion if the input is an RGB image.
 Note: 
 1. The files includes comments for easy reading but you can also find a brief report for each file below.
 2. I have uploaded a png image 'Lenna.png'. I do not own the copyrights of this image and I only uploaded it for the purpose of presenting this project.
+3. I have uploaded the images 'myimhist example.jpg', 'myhisteq example.jpg' and 'log example.jpg', so you can see the results of some of the functions.
 
 ## myimhist
 This function creates the histogram of an image. Not by using the MATLAB command.
