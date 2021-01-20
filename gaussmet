@@ -1,0 +1,33 @@
+function [Iout,T] = gaussmet( I, a )
+% Function for the transformation based on the Gaussian error function 
+% the input I must be an image
+% the input a is a parameter of the algorithm
+% the output is the image after the transformation
+ 
+% RGB check and conversion to grayscale 
+[R, C, numberOfColorChannels] = size(I);
+if numberOfColorChannels > 1 
+    I = rgb2gray(I);
+end
+I = double(I);
+
+% creating the transformation function
+T = zeros(1,256);
+for g = 1:1:256
+    T(1,g) = 255* (erf( ((g/255)-0.5)/(2*a^0.5) ) + erf(0.5/(2*a^0.5)))/(2*erf(0.5/(2*a^0.5) )) ;
+end
+
+% creating the final image
+Iout = zeros(R,C);
+for m = 1:1:R
+    for n = 1:1:C
+        if I(m,n)==0
+            Iout(m,n) = 0;
+        else
+            Iout(m,n) = T(I(m,n)+1);
+        end
+    end
+end
+Iout = uint8(Iout);
+end
+
