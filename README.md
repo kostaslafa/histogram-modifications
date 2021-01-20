@@ -11,6 +11,7 @@ Histogram modifications using MATLAB
 * [expmet](#expmet)
 * [gaussmet](#gaussmet)
 * [incc](#incc)
+* [histogram](#histogram)
 * [Contact](#contact)
 
 ## General info
@@ -20,7 +21,9 @@ It includes nine MATLAB files, 8 of which are functions and the last one is a sc
 The functions are operating on grayscale images but the input can be either an RGB or a grayscale image.
 I have included RGB to grayscale conversion if the input is an RGB image.
 
-Note: The files icludes comments for easy reading but you can also find a brief report for each file below.
+Note: 
+1. The files includes comments for easy reading but you can also find a brief report for each file below.
+2. I have uploaded a jpg image 'Lenna.jpg'. I do not own the copyrights of this image and I only uploaded it for the purpose of presenting this project.
 
 ## myimhist
 This function creates the histogram of an image. Not by using the MATLAB command.
@@ -45,6 +48,9 @@ This function performs a transformation based on Gaussian error functions.
 
 ## incc
 This function increases the contrast of an image.
+
+## histogram
+The histogram.m file is a script where the results are presenting.
 
 ## Contact
 Created by [@kostaslafa], email: kostaslafa14@gmail.com - feel free to contact me!
